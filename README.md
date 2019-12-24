@@ -5,6 +5,7 @@
 1. Git 
 2. virtualenv
 3. Python
+4. Django
 
 # Run On Your Machine?
 

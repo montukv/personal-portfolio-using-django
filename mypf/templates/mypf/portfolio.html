@@ -1,0 +1,97 @@
+{% extends 'mypf/base.html' %}
+{% load staticfiles%}
+<!--Extended base html file-->
+
+{% block content %}
+    <!--Header-->
+	<header class="masthead text-white text-center">
+	  <div class="container">
+		<img class="img-fluid mb-5 d-block mx-auto" src="static/mypf/img/mypic.png" alt="">
+		<h1 class="text-uppercase mb-0">Montukeshwar Vaishnaw</h1>
+		<hr class="star-light">
+		<h2 class="font-weight-light mb-0">Machine Learning - Django - IOT - Python</h2>
+	  </div>
+	</header>
+
+	<!--PORTFOLIO-->
+	<section class="portfolio margin" id="portfolio">
+        <div class="container" style="margin-top: 100px">
+            <h2 class="text-center text-uppercase text-white mb-0">Portfolio</h2>
+            <hr class="star-light mb-5 text-white">
+			<div class="row">
+			  <div class="col-sm-6">
+				<div class="card" style="width: 30rem;">
+				  <img src="{% static 'mypf/img/bin.jpg' %}" class="card-img-top" alt="Card image cap">
+				  <div class="card-body">
+					<h5 class="card-title">SGBMS</h5>
+					<p class="card-text">THIS IS A IOT BASE SMART GARBAGE BIN MANAGEMENT SYSTEM . INCLUDE NAVIGATION AND LIVE TRACKING USING WIRELESS CONECTION</p>
+						<small class="text-muted">IOT , ANDROID APPLICATION </small>
+					<a href="https://github.com/montukv/Smart-Garbage-Management-System-Using-IOT" class="btn btn-link">Github/Project Link</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-sm-6">
+				<div class="card" style="width: 30rem;">
+				  <img src="{% static 'mypf/img/chatbot.jpg' %}" class="card-img-top" alt="Card image cap">
+				  <div class="card-body">
+					<h5 class="card-title">ARTIFICIAL EMOTION</h5>
+					<p class="card-text">IT IS A CHATBOT WITH ALL BASIC FUNCTION WITH ADTIONAL USER EMOTION DETECTION USING SENTIMENT ANALYSIS</p>
+						<small class="text-muted">MACHINE LEARNING , SENTIMENT ANALYSIS</small>
+					<a href="https://github.com/montukv/Artificial-Emotion" class="btn btn-link">Github/Project Link</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="margin"></div>
+			<div class="row">
+			  <div class="col-sm-6">
+				<div class="card" style="width: 30rem;">
+				  <img src="{% static 'mypf/img/crop.jpg' %}" class="card-img-top" alt="Card image cap">
+				  <div class="card-body">
+					<h5 class="card-title">SCMS</h5>
+					<p class="card-text">THIS IS SMART CROP MONITORING SYSTEM USING ENVIROMENT DETECTION AND DESIES DETECTION USING IMAGES</p>
+						<small class="text-muted">IOT , IMAGE PROCESSING</small>
+					<a href="#" class="btn btn-link">Github/Project Link</a>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col-sm-6">
+				<div class="card" style="width: 30rem;">
+				  <img src="{% static 'mypf/img/calculator.jpg' %}" class="card-img-top" alt="Card image cap">
+				  <div class="card-body">
+					<h5 class="card-title">CALCULATOR FOR EVERYTHING</h5>
+					<p class="card-text">A CALCULATOR ,WITH MORE THEN EVERYTHING . FEATURES INCLUDE MATHAMATICAL PROBLEM SOLVING BY SCANNING THE PROBLEM</p>
+						<small class="text-muted">WEB APPLICATION , IMAGE PROCESSING</small>
+					<a href="#" class="btn btn-link">Github/Project Link</a>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+	</section>
+
+	<!--ABOUT-->
+	<section class="text-white mb-0 margin" id="about">
+	  <div class="container">
+		<h2 class="text-center text-uppercase text-white">About</h2>
+		<hr class="star-light mb-8">
+		<div class="row">
+		  <div class="col-lg-4 ml-auto about-1">
+			<p class="lead">I'm a Software Engineer spacealized in Python with Machine Learning , Web Development , IOT </p>
+		  </div>
+		  <div class="col-lg-4 mr-auto about-2">
+			<p class="lead">Also having knowledge of C++, C, java, HTML, CSS, Javascript, Bootstrap, GIT.  </p>
+			<p class="lead">Database : mysql, mongobd, Firebase</p>
+
+		  </div>
+		</div>
+		<div class="text-center mt-4">
+		  <a class="btn btn-xl btn-cv" href="/static/mypf/files/sample.pdf" download>
+			<i class="fas fa-download mr-2"></i>
+			Download CV
+		  </a>
+		</div>
+	  </div>
+	</section>
+
+{% endblock %}
